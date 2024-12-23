@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protfolyo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .hero_section {
+        position: relative;
+      }
+      .hero_img {
+        position: absolute;
+        width: 1343px;
+     height: 1025px;;
+      }
+
+      .hero_text {
+        position: relative;
+    width: 300px;
+    top: 80px;
+    color: #000000;
+    font-weight: bold;
+    left: 975px;
+    font-size: 26px;
+    text-align: center;
+      }
+      .hero_button{left: 1057px;
+    position: relative;
+    top: 76px;
+    background-color: #2a2b30;
+    color: white;
+    width: 125px;
+    height: 37px;
+    border-radius: 15px;
+    font-weight: bold;}
+      .second_section {
+        position: relative;
+        background-color: #2d2e33;
+        height: 150px;
+        text-align: center;
+        color: white;
+        top: 776px;
+      }
+      .about_text{
+        
+        position: absolute;
+          left: 170px;
+          width: 1037px;
+          text-align: center;
+      }
+      .Thrid_section {
+        background-color: #2a2b30;
+        color: white;
+        position: relative;
+        height: 830px;
+        top: 776px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .Fourth_container {
+        text-align: center;
+        color: white;
+        position: relative;
+        height: 649px;
+        background-color: #2d2e33;
+        top: 311px;
+      }
+      .container {
+        width: auto;
+        color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 150px 160px 180px;
+        /* background-color: #000000; */
+        /* padding: 10px; */
+        position: absolute;
+        left: 40px;
+        top: 70px;
+      }
+      .container > div {
+        background-color: #6c757d;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+      }
+      .fourth_text{position: absolute; top: 80px; left: 950px; font-size: 20px}
+      .second_grid{
+        width: auto;
+        color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 150px 160px 180px;
+        /* background-color: #000000; */
+        /* padding: 10px; */
+        position: absolute;
+        left: 753px; top: 133px
+        }
+        .second_grid > div {
+        background-color: #6c757d;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;}
+      .Fifth_container {
+        position: relative;
+        height: 500px;
+        background-color: #2a2b30;
+        top: 311px;
+        color: white;
+        text-align: center;
+      }
+      .input {
+        width: 325px;
+        height: 60px;
+        border-radius: 23px;
+      }
+      .Sixth_container {
+        position: relative;
+        height: 500px;
+        background-color: #2d2e33;
+        top: 311px;
+        color: white;
+        display: flex;
+      }
+      .sixth_text{position: absolute; left: 382px; top: 100px}
+      .map{position: absolute; left: 600px; top: 20px}
+      .seventh-container {
+        position: relative;
+        height: 137px;
+        background-color: #2a2b30;
+        top: 295px;
+        color: white;
+        text-align: center;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 65px;
+        height: 67px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-pinterest {
+        background: #cb2027;
+        color: white;
+      }
+
+      @media  screen and (max-width: 425px)
+       {
+        * {
+          margin: 0px;
+          padding: 0px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero_section {
+
+        }
+        .hero_img {width: 100%;height: 240px;
+        }
+        .hero_text{}
+        .second_section{font-size: 10px;}
+        .Thrid_section {
+          height:      1255px;
+          top: 111px;
+        }
+        .container{grid-template-columns: auto auto auto;left:-3px;}
+.second_section {
+  
+top:-48px}
+.Thrid_section{top:-49px;}
+.Fourth_container{top: -51px;
+  height: 902px;}
+  .fourth_text{top: 515px;
+    left: 240px;}
+    .second_grid{grid-template-columns: auto auto auto;
+      left: 10px;
+        top: 616px;}
+        .Fifth_container{top: -52px;}
+        .Sixth_container{top: -53px;height: 1000px;}
+        .sixth_text{left: 140px;
+          top: 231px;}
+          .map{position: absolute;
+    left: 0px;
+    top: 485px;}
+    iframe{width:400px;}
+    .seventh-container{height: 211px;top:-70px;}
+    .about_text{
+        left: 26px;
+    width: 372px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background-color: #2a2b30 !important; color: white"
+    >
+      <a class="navbar-brand" href="#"
+        ><img src="Omar logo.png" alt="" style="width: 93px; height: 59px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#S1" style="color: white"
+            >CV</a
+          >
+          <a class="nav-item nav-link active" href="#S2" style="color: white"
+            >About Me</a
+          >
+          <a class="nav-item nav-link active" href="#S3" style="color: white"
+            >Projects</a
+          >
+          <a class="nav-item nav-link active" href="#S4" style="color: white"
+            >Skills</a
+          >
+          <a class="nav-item nav-link active" href="#S5" style="color: white"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="hero_section">
+      <img src="Major BackGround.webp" alt="" class="hero_img" />
+      <p
+        class="hero_text"
+
+      >
+        Hello everyone! my name is omar abo jolban and I am web developer
+        trainee in Orange Coding Academy.
+      </p>
+      <button
+       class="hero_button"
+        id="S1"
+      >
+        My CV
+      </button>
+    </div>
+ 
+    <div class="second_section">
+      <h2 id="S2">About Me</h2>
+      <p
+        
+      class="about_text"
+      >
+        full stack trainee with a Bachelor's in Cybersecurity. Skilled in SQL,
+        HTML, CSS, JavaScript, and C#, with experience developing web apps using
+        ASP.NET Core MVC. Currently training in Computer Hacking Forensic
+        Investigation and improving English proficiency. Experienced in cyber
+        defence through the Cyber Warriors Competition, with strong
+        problem-solving and data retrieval skills.
+      </p>
+    </div>
+    <div class="Thrid_section">
+      <h2 id="S3">Projects</h2>
+      <br /><br />
+      <div>
+        <span
+          ><img
+            src="project 1.png"
+            alt=""
+            style="height: 150px; width: 231px"
+          />
+          <img
+            src="project11.png"
+            alt=""
+            style="height: 150px; width: 231px"
+          /><br /><br />
+          <p>
+            <b>online cafe in Figma</b> <br /><br /><br />Step into our virtual
+            café and experience a cozy, inviting atmosphere where you can
+            unwind, socialize, and indulge in your favorite virtual beverages.
+            <br />
+            Whether you're here to catch up with friends, attend a live event,
+            or simply relax.
+          </p></span
+        >
+      </div>
+      <hr />
+      <br />
+      <div>
+        <span
+          ><img
+            src="project 2.png"
+            alt=""
+            style="height: 150px; width: 231px"
+          /><img
+            src="project 22.png"
+            alt=""
+            style="height: 150px; width: 231px"
+          /><br /><br />
+          <p>
+            <b>MY Protfoliox </b><br />
+            <br /><br /><br />A sleek, user-friendly portfolio showcasing my
+            development skills through project highlights, interactive elements,
+            and responsive design. This site features a modern layout,<br />
+            detailed project descriptions, and a contact form to connect with
+            potential clients or employers.
+          </p></span
+        >
+      </div>
+    </div>
+
+    <div class="Fourth_container">
+      <h2 id="S4">Skills</h2>
+
+      <p style="position: absolute; top: 80px; left: 225px; font-size: 20px">
+        Tecinchal Skills
+      </p>
+      <div class="container" style="top: 140px">
+        <div>Python.</div>
+        <div>C# (C-sharp).</div>
+        <div>Java.</div>
+        <div>PHP (Hypertext Preprocessor).</div>
+        <div>Javascript.</div>
+        <div>SQL (Structed Query Languages).</div>
+        <div>Html (Hyper Text Markup Languages).</div>
+        <div>CSS (Cascading Style Sheet).</div>
+        <div>Scrum Agile Methodology.</div>
+      </div>
+
+      <p class="fourth_text" >
+        Soft-Skills
+      </p>
+      <div
+        class="second_grid"
+        
+      >
+        <div>Time management.</div>
+        <div>Multitasking.</div>
+        <div>Problem solving.</div>
+        <div>Communication.</div>
+        <div>Javascript.</div>
+        <div>Ability to work on both team or individual.</div>
+      </div>
+    </div>
+
+    <div class="Fifth_container">
+      <h2 id="S5">Contact Me</h2>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          value="Omar"
+          class="input"
+        /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          value="Abo Jolban"
+          class="input"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="example@gmail.com"
+          class="input"
+        /><br />
+        <label for="messages">Message :</label><br />
+        <textarea
+          id="messages"
+          name="messages"
+          rows="5"
+          cols="40"
+          class="input"
+          style="height: 80px"
+        >
+your message:</textarea
+        ><br />
+        <input
+          type="submit"
+          value="Send"
+          class="fas fa-paper-plane"
+          style="width: 100px; height: 30px; border-radius: 30px"
+        />
+      </form>
+      <!-- position: absolute;
+            left: 546px; -->
+    </div>
+
+    <div class="Sixth_container">
+      <div style="position: absolute; left: 65px; top: 100px">
+        <p>
+          <a>+00962 79 297 1776</a>
+        </p>
+        <p>
+          <a>omarabojolban9@gmail.com </a>
+        </p>
+      </div>
+
+      <div class="sixth_text" >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#S1" style="color: white"
+            >CV</a
+          >
+          <a class="nav-item nav-link active" href="#S2" style="color: white"
+            >About Me</a
+          >
+          <a class="nav-item nav-link active" href="#S3" style="color: white"
+            >Projects</a
+          >
+          <a class="nav-item nav-link active" href="#S4" style="color: white"
+            >Skills</a
+          >
+          <a class="nav-item nav-link active" href="#S5" style="color: white"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+
+      <div class="map" style="">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.0097298110522!2d35.85224372511936!3d32.55258557375814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1734852423304!5m2!1sar!2sjo"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="seventh-container">
+      <hr />
+      <p>&copy; 2024 Myprofile.com</p>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+    </div>
+  </body>
+</html>
