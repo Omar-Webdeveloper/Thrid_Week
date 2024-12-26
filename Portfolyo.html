@@ -15,6 +15,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <style>
       * {
         margin: 0px;
@@ -27,7 +30,7 @@
       .hero_img {
         position: absolute;
         width: 1343px;
-     height: 1025px;;
+     height: 515px;;
       }
 
       .hero_text {
@@ -55,7 +58,7 @@
         height: 150px;
         text-align: center;
         color: white;
-        top: 776px;
+        top: 306px;
       }
       .about_text{
         
@@ -68,19 +71,30 @@
         background-color: #2a2b30;
         color: white;
         position: relative;
-        height: 1362px;
-        top: 776px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        height: 759px;
+        top: 306px;
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 20px;
       }
+      .card2{border: 1px solid black;
+    width: 416px;height: 646px;top: 100px;
+    position: absolute;left: 454px;}
+    .card3{border: 1px solid black;
+      width: 416px;height: 646px;top: 100px;
+      position: absolute;left: 900px;}
+
       .Fourth_container {
         text-align: center;
         color: white;
         position: relative;
         height: 649px;
         background-color: #2d2e33;
-        top: 311px;
+        top: 306px;
       }
       .container {
         width: auto;
@@ -92,8 +106,9 @@
         position: absolute;
         left: 40px;
         top: 70px;
-      }
+        gap: 16px;      }
       .container > div {
+        border-radius: 10px;
         background-color: #6c757d;
         padding: 10px;
         font-size: 20px;
@@ -108,9 +123,10 @@
         /* background-color: #000000; */
         /* padding: 10px; */
         position: absolute;
-        left: 753px; top: 133px
-        }
-        .second_grid > div {
+        left: 753px; top: 133px;        gap: 16px;}
+
+        .second_grid > div {        border-radius: 10px;
+
         background-color: #6c757d;
         padding: 10px;
         font-size: 20px;
@@ -119,30 +135,35 @@
         position: relative;
         height: 500px;
         background-color: #2a2b30;
-        top: 311px;
+        top: 306px;
         color: white;
         text-align: center;
       }
       .input {
         width: 325px;
         height: 60px;
-        border-radius: 23px;
+        border-radius: 23px;padding-top: 10px;
+        padding-left: 11px;
       }
+
       .Sixth_container {
         position: relative;
-        height: 500px;
+        height: 307px;
         background-color: #2d2e33;
-        top: 311px;
+        top: 306px;
         color: white;
         display: flex;
       }
-      .sixth_text{position: absolute; left: 382px; top: 100px}
-      .map{position: absolute; left: 600px; top: 20px}
+      .foot_text{position: absolute;
+    left: 169px;
+    top: 100px;}
+      .sixth_text{position: absolute; left: 590px; top: 100px}
+      .map{position: absolute; left: 880px; top: 20px}
       .seventh-container {
         position: relative;
         height: 137px;
         background-color: #2a2b30;
-        top: 295px;
+        top: 290px;
         color: white;
         text-align: center;
       }
@@ -195,6 +216,12 @@
         background: #cb2027;
         color: white;
       }
+      .fa-whatsapp {
+  background: #00b489;
+  color: white;
+}
+.fa-github{  background: #000000;
+  color: rgb(255, 255, 255);}
 
       @media  screen and (max-width: 425px)
        {
@@ -203,33 +230,49 @@
           padding: 0px;
           font-family: Arial, Helvetica, sans-serif;
         }
-        .hero_section {
+        .hero_button {left: 300px;top: -52px;
 
         }
         .hero_img {width: 100%;height: 240px;
         }
-        .hero_text{}
+        .hero_text{        left: 30px;
+        top: 1px;
+        color: white;
+        font-size: 29px;}
         .second_section{font-size: 10px;}
         .Thrid_section {
           height:      1255px;
           top: 111px;
         }
-        .container{grid-template-columns: auto auto auto;left:-3px;}
+        .container{grid-template-columns: auto auto auto;
+        left: -3px;
+        gap: 1px;}
 .second_section {
   
 top:-48px}
-.Thrid_section{top:-49px;}
+.Thrid_section{top:-49px;height: 2180px;}
+.card2{top: 758px;
+        left: 8px;
+        height: 671px;}
+  .card3{top: 1475px;
+        left: 7px;
+        height: 670px;
+}
 .Fourth_container{top: -51px;
   height: 902px;}
   .fourth_text{top: 515px;
     left: 240px;}
     .second_grid{grid-template-columns: auto auto auto;
       left: 10px;
-        top: 616px;}
+        top: 616px;gap: 1px;}
         .Fifth_container{top: -52px;}
         .Sixth_container{top: -53px;height: 1000px;}
-        .sixth_text{left: 140px;
-          top: 231px;}
+        .foot_text{position: absolute;
+    left: 81px;
+    top: 92px;
+    text-align: center;}
+        .sixth_text{left: 150px;
+          top: 283px;}
           .map{position: absolute;
     left: 0px;
     top: 485px;}
@@ -263,9 +306,7 @@ top:-48px}
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#S1" style="color: white"
-            >CV</a
-          >
+          
           <a class="nav-item nav-link active" href="#S2" style="color: white"
             >About Me</a
           >
@@ -287,14 +328,16 @@ top:-48px}
         class="hero_text"
 
       >
-        Hello everyone! my name is omar abo jolban and I am web developer
-        trainee in Orange Coding Academy.
+         Name : Omar Abo Jolban Position : Full Stack Web Developer
+        Trainee at Orange Coding Academy.
       </p>
       <button
        class="hero_button"
         id="S1"
       >
-        My CV
+      <a        href="https://drive.google.com/file/d/1ZQTgXi9ijnBK4XBqolR6TbwK98AxFX4s/view?usp=sharing"
+      >Download CV</a>
+        
       </button>
     </div>
  
@@ -304,31 +347,27 @@ top:-48px}
         
       class="about_text"
       >
-        full stack trainee with a Bachelor's in Cybersecurity. Skilled in SQL,
-        HTML, CSS, JavaScript, and C#, with experience developing web apps using
-        ASP.NET Core MVC. Currently training in Computer Hacking Forensic
-        Investigation and improving English proficiency. Experienced in cyber
-        defence through the Cyber Warriors Competition, with strong
-        problem-solving and data retrieval skills.
+      I am a Full Stack Web Developer Trainee at Orange Coding Academy, with a recent Bachelor's degree in Cybersecurity from Yarmouk University. My journey in tech is fueled by a passion for learning and a knack for problem-solving. I have honed my skills in SQL, HTML, CSS, JavaScript, C#, and much more. Eager to apply my knowledge, I strive to build secure and efficient web solutions that make a difference.
       </p>
     </div>
     <div class="Thrid_section">
       <h2 id="S3">Projects</h2>
       <br /><br />
-      <div>
+      <div style="border: 1px solid black;
+    width: 416px;height: 646px;top: 100px;
+    position: absolute;left: 10px;
+    ">
         <span
           ><img
-            src="project 1.png"
+            src="project1.png"
             alt=""
-            style="height: 150px; width: 231px"
+            style="    height: 415px;
+    width: 415px;"
           />
-          <img
-            src="project11.png"
-            alt=""
-            style="height: 150px; width: 231px"
-          /><br /><br />
+
+          <br />
           <p>
-            <b>online cafe in Figma</b> <br /><br /><br />Step into our virtual
+            <b>online cafe in Figma</b> <br /><br />tep into our virtual
             café and experience a cozy, inviting atmosphere where you can
             unwind, socialize, and indulge in your favorite virtual beverages.
             <br />
@@ -336,30 +375,60 @@ top:-48px}
             or simply relax.
           </p></span
         >
+        <button style="    height: 45px;
+        width: 140px;
+        border-radius: 20px;
+        background-color: #86A788;"><a href="https://www.figma.com/design/w2WkHAJOL7TWuTlqG5GUXf/Untitled?node-id=0-1&t=Lxn7g5oyh46WaH1T-1" style="background-color: #86A788;
+        color: white;">Learn more know</a></button>
+
       </div>
-      <hr />
       <br />
-      <div>
+      <div class="card2" >
         <span
           ><img
             src="project 2.png"
             alt=""
-            style="height: 150px; width: 231px"
-          /><img
-            src="project 22.png"
-            alt=""
-            style="height: 150px; width: 231px"
-          /><br /><br />
+            style="    height: 415px;
+    width: 415px;"
+          /><br />
           <p>
             <b>MY Protfoliox </b><br />
-            <br /><br /><br />A sleek, user-friendly portfolio showcasing my
+            <br />A sleek, user-friendly portfolio showcasing my
             development skills through project highlights, interactive elements,
             and responsive design. This site features a modern layout,<br />
             detailed project descriptions, and a contact form to connect with
             potential clients or employers.
           </p></span
         >
+        <button style="    height: 45px;
+        width: 140px;
+        border-radius: 20px;
+        background-color: #86A788;"><a href="" style="background-color: #86A788;
+        color: white;">Learn more know</a></button>
       </div>
+
+      <div class="card3"  style="
+      ">
+          <span
+            ><img
+              src="project 3.jpg"
+              alt=""
+              style="    height: 415px;
+      width: 415px;"
+            /><br />
+            <p>
+              <b>Three authintication factor</b><br>
+              <br />The purpose of this project is to develop a cutting-edge, multi-factor authentication system that integrates Radio-Frequency Identification (RFID) technology and facial recognition techniques.The system aims to provide a secure and efficient means of controlling access to buildings .
+
+            </p></span
+          >
+          
+          <button style="    height: 45px;
+          width: 140px;
+          border-radius: 20px;
+          background-color: #86A788;"><a href="" style="background-color: #86A788;
+          color: white;">Learn more know</a></button>
+        </div>
     </div>
 
     <div class="Fourth_container">
@@ -369,15 +438,15 @@ top:-48px}
         Tecinchal Skills
       </p>
       <div class="container" style="top: 140px">
-        <div>Python.</div>
-        <div>C# (C-sharp).</div>
-        <div>Java.</div>
-        <div>PHP (Hypertext Preprocessor).</div>
-        <div>Javascript.</div>
-        <div>SQL (Structed Query Languages).</div>
-        <div>Html (Hyper Text Markup Languages).</div>
-        <div>CSS (Cascading Style Sheet).</div>
-        <div>Scrum Agile Methodology.</div>
+        <div >Python.</div>
+        <div >C# (C-sharp).</div>
+        <div >Java.</div>
+        <div >PHP (Hypertext Preprocessor).</div>
+        <div >Javascript.</div>
+        <div >SQL (Structed Query Languages).</div>
+        <div >Html (Hyper Text Markup Languages).</div>
+        <div >CSS (Cascading Style Sheet).</div>
+        <div >Scrum Agile Methodology.</div>
       </div>
 
       <p class="fourth_text" >
@@ -399,7 +468,7 @@ top:-48px}
     <div class="Fifth_container">
       <h2 id="S5">Contact Me</h2>
       <form action="/action_page.php">
-        <label for="fname">First name:</label><br />
+        <label for="fname" >First name:</label><br />
         <input
           type="text"
           id="fname"
@@ -407,7 +476,7 @@ top:-48px}
           value="Omar"
           class="input"
         /><br />
-        <label for="lname">Last name:</label><br />
+        <label for="lname" >Last name:</label><br />
         <input
           type="text"
           id="lname"
@@ -415,7 +484,7 @@ top:-48px}
           value="Abo Jolban"
           class="input"
         /><br />
-        <label for="email">Email:</label><br />
+        <label for="email" >Email:</label><br />
         <input
           type="email"
           id="email"
@@ -423,7 +492,7 @@ top:-48px}
           value="example@gmail.com"
           class="input"
         /><br />
-        <label for="messages">Message :</label><br />
+        <label for="messages" >Message :</label><br />
         <textarea
           id="messages"
           name="messages"
@@ -446,20 +515,20 @@ your message:</textarea
     </div>
 
     <div class="Sixth_container">
-      <div style="position: absolute; left: 65px; top: 100px">
+      <div class="foot_text" >
         <p>
-          <a>+00962 79 297 1776</a>
+          <a href="#">+00962 79 297 1776</a>
         </p>
         <p>
-          <a>omarabojolban9@gmail.com </a>
+          <a href="#">omarabojolban9@gmail.com</a>
         </p>
+        <img src="Omar logo.png" alt="" style="    width: 100px;
+    height: 60px;">
       </div>
 
       <div class="sixth_text" >
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#S1" style="color: white"
-            >CV</a
-          >
+
           <a class="nav-item nav-link active" href="#S2" style="color: white"
             >About Me</a
           >
@@ -475,11 +544,11 @@ your message:</textarea
         </div>
       </div>
 
-      <div class="map" style="">
+      <div class="map" style=" ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.0097298110522!2d35.85224372511936!3d32.55258557375814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1734852423304!5m2!1sar!2sjo"
-          width="600"
-          height="450"
+          width="325"
+          height="275"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -490,13 +559,11 @@ your message:</textarea
     <div class="seventh-container">
       <hr />
       <p>&copy; 2024 Myprofile.com</p>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-google"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-youtube"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-pinterest"></a>
+      <a href="https://www.linkedin.com/in/omar-abo-jolban-938b7833b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" title="linkdln"></a>
+      <a href="https://github.com/Omar-Webdeveloper" class="fa fa-github" title="git hub"></a>
+      <a href="https://www.facebook.com/profile.php?id=100055817393686&mibextid=ZbWKwL" class="fa fa-facebook" title="facebook"></a>
+      <a href="https://x.com/OJolban?s=09" class="fa fa-twitter" title="twitter"></a>
+      <a href="https://wa.me/qr/54VDAUHCRCGII1" class="fa fa-whatsapp" title="what's up"></a>
     </div>
   </body>
 </html>
