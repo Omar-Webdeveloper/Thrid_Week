@@ -222,6 +222,27 @@
 }
 .fa-github{  background: #000000;
   color: rgb(255, 255, 255);}
+  #backToTop {
+      display: none; /* Hidden by default */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #002254;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 4px;
+      width: 100px;
+      height: 100px;
+    }
+  
+    #backToTop:hover {
+      background-color: #F24964;
+    }
 
       @media  screen and (max-width: 425px)
        {
@@ -346,6 +367,8 @@ top:-48px}
       >Download CV</a>
         
       </button>
+      <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
     </div>
  
     <div class="second_section">
@@ -572,5 +595,23 @@ your message:</textarea
       <a href="https://x.com/OJolban?s=09" class="fa fa-twitter" title="twitter"></a>
       <a href="https://wa.me/qr/54VDAUHCRCGII1" class="fa fa-whatsapp" title="what's up"></a>
     </div>
+    <script>
+      // Show the button when the user scrolls down 20px from the top of the document
+      window.onscroll = function() {
+        var backToTopBtn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      };
+    
+      // Function to scroll to the top
+      function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      }
+    </script>
+
   </body>
 </html>
